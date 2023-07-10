@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 13vh;
+    border-bottom: solid grey 1px;
+}
+figure{
+    display: flex;
+    justify-content: space-around;
+    width: 12.6vw;
+}
+ul{
+    display: flex;
+    list-style: none;
+    width: 26vw;
+    justify-content: space-evenly;
+    font-size: 18px;
+}
+li:hover{
+    transform: scale(115%);
+    cursor: pointer;
+}
+
+/* 
+    media queries
+
+    @media -> ele é a regra de estilo do CSS
+    que permite que criemos estilos para diferentes tipos
+    de layout (smarts Tvs, monitores, televisões, 
+    smartwatches, celulares...)
+
+    sintaxe (forma escrita)
+
+    @media screen and (max-width:500px){
+        max-width -> aplique esse estilo de página
+        para telas com larguras menores que 500px
+    }
+
+    @media screen and (min-width:1300px){
+        min-width -> aplique esse estilo de página
+        para telas com larguras maiores que 1300px
+    }
+
+*/
+@media screen and (max-width:500px){
+    /* 
+    o código que será escrito aqui vai ser totalmente
+    voltado para telas com largura menor que 500px
+    */
+    header{
+        flex-direction: column;
+        height: 20vh;
+    }
+}
