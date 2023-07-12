@@ -27,13 +27,32 @@ li:hover{
     transform: scale(115%);
     cursor: pointer;
 }
-
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 78vh;
+}
+p{
+    font-weight: 900;
+    font-size: 36px;
+    width: 35vw;
+}
+button{
+    background-color: #FCA60F;
+    height: 7vh;
+    width: 18vw;
+    border: none;
+    color: #ffffff;
+    font-size: 22px;
+    cursor: pointer;
+}
 /* 
     media queries
 
     @media -> ele é a regra de estilo do CSS
     que permite que criemos estilos para diferentes tipos
-    de layout (smarts Tvs, monitores, televisões, 
+    de layouts (smarts Tvs, monitores, televisões, 
     smartwatches, celulares...)
 
     sintaxe (forma escrita)
@@ -49,6 +68,8 @@ li:hover{
     }
 
 */
+
+
 @media screen and (max-width:500px){
     /* 
     o código que será escrito aqui vai ser totalmente
@@ -57,5 +78,22 @@ li:hover{
     header{
         flex-direction: column;
         height: 20vh;
+    }
+    ul{ 
+        width: 45vw;
+    }
+    main figure{
+        display: none;
+    }
+    p{
+        font-size: 20px;
+        width: 60vw;
+        text-align: center;
+    }
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 }
